@@ -1,26 +1,85 @@
+# =====================================
+# Variables de entorno
+# =====================================
 .env
-# NUNCA subir el .env real (tiene contraseñas)
+.env.*
 
+# =====================================
+# Python
+# =====================================
 __pycache__/
 *.pyc
 *.pyo
-# Archivos compilados de Python
+*.pyd
+*.log
 
+# =====================================
+# Entornos virtuales
+# =====================================
 venv/
 .venv/
 env/
-# Entornos virtuales locales
 
+# =====================================
+# TensorFlow / Modelos
+# =====================================
 models_saved/
-# Los modelos .keras se generan en el servidor al entrenar
-# No tiene sentido subirlos a Git (son binarios pesados)
-
-reports/
-# Los reportes PDF se generan en el servidor
-
 *.keras
+*.h5
 *.pkl
-# Archivos de modelos y scalers
 
+# =====================================
+# Reportes generados
+# =====================================
+reports/
+
+# =====================================
+# Bases de datos locales
+# =====================================
+*.db
+*.sqlite
+*.sqlite3
+
+# =====================================
+# Archivos temporales
+# =====================================
+*.tmp
+
+# =====================================
+# Jupyter Notebook
+# =====================================
+.ipynb_checkpoints/
+
+# =====================================
+# VS Code
+# =====================================
+.vscode/
+
+# =====================================
+# PyCharm
+# =====================================
+.idea/
+
+# =====================================
+# Build Python
+# =====================================
+build/
+dist/
+*.egg-info/
+
+# =====================================
+# Cachés
+# =====================================
+.pytest_cache/
+.mypy_cache/
+
+# =====================================
+# Sistema Operativo
+# =====================================
 .DS_Store
-# Archivos de sistema macOS
+Thumbs.db
+
+# =====================================
+# Backups de datos
+# =====================================
+data/backup_*.csv
