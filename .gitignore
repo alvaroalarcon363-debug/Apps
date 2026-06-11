@@ -1,0 +1,26 @@
+.env
+# NUNCA subir el .env real (tiene contraseñas)
+
+__pycache__/
+*.pyc
+*.pyo
+# Archivos compilados de Python
+
+venv/
+.venv/
+env/
+# Entornos virtuales locales
+
+models_saved/
+# Los modelos .keras se generan en el servidor al entrenar
+# No tiene sentido subirlos a Git (son binarios pesados)
+
+reports/
+# Los reportes PDF se generan en el servidor
+
+*.keras
+*.pkl
+# Archivos de modelos y scalers
+
+.DS_Store
+# Archivos de sistema macOS
